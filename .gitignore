@@ -1,0 +1,42 @@
+# Julia
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+*.jl.out
+Manifest.toml
+
+# Julia artifacts
+deps/deps.jl
+artifacts/
+
+# Julia compilation
+*.ji
+*.o
+*.so
+*.dylib
+*.dll
+
+# Julia packages
+packages/
+logs/
+
+# Julia REPL
+.local/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+build/
+dist/
+
+# Generated images
+*.png
