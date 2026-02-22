@@ -33,33 +33,33 @@ _initial_state_for_law(::MicroplaneMCDamage{T}, np::Int, ::Type{T}) where {T} = 
 # ---- compute_stress_tangent ----
 
 function MaterialTestUtils.compute_stress_tangent(
-    ε::SymmetricTensor{2,3,T}, material::MicroplaneMaterial{Elastic{T},T}, state::ElasticState{T}
+    ε::SymmetricTensor{2,3,T}, material::MicroplaneMaterial{Elastic{T},T}, state::ElasticState{T}; cache=nothing
 ) where {T<:Real}
-    return MicroplaneModels.compute_stress_tangent(ε, material, state)
+    return MicroplaneModels.compute_stress_tangent(ε, material, state; cache=cache)
 end
 
 function MaterialTestUtils.compute_stress_tangent(
-    ε::SymmetricTensor{2,3,T}, material::MicroplaneMaterial{ElasticDamage{T},T}, state::ElasticDamageState{T}
+    ε::SymmetricTensor{2,3,T}, material::MicroplaneMaterial{ElasticDamage{T},T}, state::ElasticDamageState{T}; cache=nothing
 ) where {T<:Real}
-    return MicroplaneModels.compute_stress_tangent(ε, material, state)
+    return MicroplaneModels.compute_stress_tangent(ε, material, state; cache=cache)
 end
 
 function MaterialTestUtils.compute_stress_tangent(
-    ε::SymmetricTensor{2,3,T}, material::MicroplaneMaterial{MicroplaneMC{T},T}, state::MicroplaneMCState{T}
+    ε::SymmetricTensor{2,3,T}, material::MicroplaneMaterial{MicroplaneMC{T},T}, state::MicroplaneMCState{T}; cache=nothing
 ) where {T<:Real}
-    return MicroplaneModels.compute_stress_tangent(ε, material, state)
+    return MicroplaneModels.compute_stress_tangent(ε, material, state; cache=cache)
 end
 
 function MaterialTestUtils.compute_stress_tangent(
-    ε::SymmetricTensor{2,3,T}, material::MicroplaneMaterial{MicroplaneMCCap{T},T}, state::MicroplaneMCCapState{T}
+    ε::SymmetricTensor{2,3,T}, material::MicroplaneMaterial{MicroplaneMCCap{T},T}, state::MicroplaneMCCapState{T}; cache=nothing
 ) where {T<:Real}
-    return MicroplaneModels.compute_stress_tangent(ε, material, state)
+    return MicroplaneModels.compute_stress_tangent(ε, material, state; cache=cache)
 end
 
 function MaterialTestUtils.compute_stress_tangent(
-    ε::SymmetricTensor{2,3,T}, material::MicroplaneMaterial{MicroplaneMCDamage{T},T}, state::MicroplaneMCDamageState{T}
+    ε::SymmetricTensor{2,3,T}, material::MicroplaneMaterial{MicroplaneMCDamage{T},T}, state::MicroplaneMCDamageState{T}; cache=nothing
 ) where {T<:Real}
-    return MicroplaneModels.compute_stress_tangent(ε, material, state)
+    return MicroplaneModels.compute_stress_tangent(ε, material, state; cache=cache)
 end
 
 end # module
