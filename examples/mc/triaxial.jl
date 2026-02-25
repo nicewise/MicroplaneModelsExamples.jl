@@ -19,7 +19,7 @@ cfg = MCConfig(
     E=40000.0, ν=0.2,          # [MPa] E, [-] ν
     c_ini=2.0, c_peak=8.0, c_res=0.5,  # [MPa] 内聚力
     α_ini=0.2, α_peak=0.5, α_res=0.3,  # [-] 摩擦系数
-    γc=0.015, k=0.3, np=110
+    γc=0.015, k=0.3, np=21
 )
 mat = create_material(cfg)
 

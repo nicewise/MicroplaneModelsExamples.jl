@@ -24,7 +24,7 @@ cfg = MCDamageConfig(
     γc=0.015, k=0.3,
     # Damage (strain-based, like ElasticDamage)
     γc_damage=0.008, cT=30.0, κ₀=0.0002,
-    np=110,
+    np=21,
     damage_type=:exp_zero
 )
 mat = create_material(cfg)

@@ -11,7 +11,7 @@ cfg_mc = MCConfig(
     E=40000.0, ν=0.2,
     c_ini=2.0, c_peak=8.0, c_res=0.5,
     α_ini=0.2, α_peak=0.5, α_res=0.3,
-    γc=0.02, k=0.3, np=110
+    γc=0.02, k=0.3, np=21
 )
 mat_mc = create_material(cfg_mc)
 
@@ -23,7 +23,7 @@ cfg_mc_damage = MCDamageConfig(
     α_ini=0.2, α_peak=0.5, α_res=0.3,
     γc=0.02, k=0.3,
     γc_damage=0.005, cT=30.0, κ₀=0.0002,
-    np=110,
+    np=21,
     damage_type=:exp_zero
 )
 mat_mc_damage = create_material(cfg_mc_damage)

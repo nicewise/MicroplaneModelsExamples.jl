@@ -27,7 +27,7 @@ cfg = MCDamageConfig(
     γc=0.015, k=0.3,
     # Damage - very conservative for triaxial
     γc_damage=0.05, cT=100.0, κ₀=0.02,
-    np=110,
+    np=21,
     damage_type=:exp_zero
 )
 mat = create_material(cfg)

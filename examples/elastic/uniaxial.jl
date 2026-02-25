@@ -18,7 +18,7 @@ using LinearAlgebra
 E = 40000.0  # [MPa] Young's modulus (40 GPa)
 ν = 0.2      # [-] Poisson's ratio
 
-cfg = ElasticConfig(; E=E, ν=ν, np=110)
+cfg = ElasticConfig(; E=E, ν=ν, np=21)
 mat = create_material(cfg)
 
 ε_hist, σ_hist, state_hist = uniaxial_compression(mat; nsteps=50, εmax=-0.01)

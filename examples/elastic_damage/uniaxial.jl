@@ -29,7 +29,7 @@ cfg = ElasticDamageConfig(
     E=40000.0, ν=0.2,    # [MPa] 弹性模量, [-] 泊松比
     γc=0.008,             # 损伤演化速率
     cT=30.0, κ₀=0.0002,  # 切向权重, 损伤阈值
-    np=110
+    np=21
     # damage_type 默认 :exp_zero
 )
 mat = create_material(cfg)
